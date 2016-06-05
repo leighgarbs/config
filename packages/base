@@ -10,3 +10,10 @@ vim
 nano
 git
 subversion
+zip
+unzip
+bind9-host
+dnsutils
+gcc
+g++
+make
