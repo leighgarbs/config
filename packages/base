@@ -16,3 +16,5 @@ dnsutils
 gcc
 g++
 make
+gdb
+valgrind
