@@ -18,4 +18,15 @@
 (add-hook 'c-mode-common-hook 'common-text-settings)
 
 ;; linux style C intenting
-(setq c-default-style "linux" c-basic-offset 2)
+(setq c-default-style "linux" c-basic-offset 4)
+
+;; highlight characters that go past whitespace-line-column
+(require 'whitespace)
+(setq whitespace-style '(face empty tabs lines-tail trailing))
+(global-whitespace-mode t)
+
+;; insert spaces in place of tabs
+(setq-default indent-tabs-mode nil)
+
+;; autowrap lines in all text buffers
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
