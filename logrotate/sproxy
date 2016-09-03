@@ -1,0 +1,9 @@
+/var/log/sproxy.log {
+    weekly
+    create 0664 root root
+    rotate 4
+    compress
+    postrotate
+      [ ! -f /var/run/sproxy.pid ] || kill -USR1 `cat /var/run/sproxy.pid`
+    endscript
+}
