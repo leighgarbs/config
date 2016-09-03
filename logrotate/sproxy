@@ -1,6 +1,6 @@
 /var/log/sproxy.log {
     weekly
-    create 0664 root root
+    nocreate
     rotate 4
     compress
     postrotate
