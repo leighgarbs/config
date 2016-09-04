@@ -1,0 +1,10 @@
+[Unit]
+Description=Netsuspend network-aware system timeout service
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/netsuspend -D --verbose-log
+PIDFile=/var/run/netsuspend.pid
+
+[Install]
+WantedBy=multi-user.target
