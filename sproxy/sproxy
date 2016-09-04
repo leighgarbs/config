@@ -64,7 +64,7 @@ do_start()
 #
 do_stop()
 {
-        killall -s SIGINT sproxy&
+        kill `cat $PIDFILE`
 }
 
 #
