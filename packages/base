@@ -5,6 +5,7 @@ expect
 git
 htop
 nano
+nmap
 parted
 rsync
 smbclient
