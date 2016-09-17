@@ -26,7 +26,7 @@ PATH=/bin:/usr/bin:/home/leigh/bin:/home/leigh/bin/linux
 TOWERHOME_CONF=/home/leigh/config/backup1/rsnapshot.tower_home.conf
 
 # TOWER_HOME ----------------------------------------------
-0  3  * * * wake_server && sleep 120 && rsnapshot -c $TOWERHOME_CONF sync && rsnapshot -c $TOWERHOME_CONF daily
+0  3  * * * rsnapshot -c $TOWERHOME_CONF sync && rsnapshot -c $TOWERHOME_CONF daily
 55 23 * * 0 rsnapshot -c $TOWERHOME_CONF weekly && backup_notify Weekly tower_home
 57 23 1 * * rsnapshot -c $TOWERHOME_CONF monthly && backup_notify Monthly tower_home
 
