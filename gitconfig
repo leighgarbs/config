@@ -3,3 +3,7 @@
 	name = Leigh Garbs
 [push]
 	default = simple
+[core]
+	editor = emacs
+[color]
+	ui = auto

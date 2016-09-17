@@ -1,9 +1,0 @@
-[user]
-	name = Leigh Garbs
-	email = craymen@gmail.com
-[core]
-	editor = emacs
-[push]
-	default = simple
-[color]
-	ui = auto
