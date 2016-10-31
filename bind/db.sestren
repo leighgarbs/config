@@ -1,3 +1,5 @@
+$ORIGIN sestren.
+
 $TTL    604800
 @       IN      SOA     backup1.sestren admin.backup1.sestren (
                               2         ; Serial
@@ -7,7 +9,7 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
                 IN      NS      router
-router          IN      A       192.168.0.1
+router	        IN      A       192.168.0.1
 
                 IN      NS      tower
 tower           IN      A       192.168.0.2
