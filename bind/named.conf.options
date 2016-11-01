@@ -5,16 +5,15 @@ options {
 	// to talk to, you may need to fix the firewall to allow multiple
 	// ports to talk.  See http://www.kb.cert.org/vuls/id/800113
 
-	// If your ISP provided one or more IP addresses for stable 
-	// nameservers, you probably want to use them as forwarders.  
-	// Uncomment the following block, and insert the addresses replacing 
+	// If your ISP provided one or more IP addresses for stable
+	// nameservers, you probably want to use them as forwarders.
+	// Uncomment the following block, and insert the addresses replacing
 	// the all-0's placeholder.
 
-	forwarders { 192.168.0.1; };
+        recursion no;
+        //allow-recursion { 192.168.0/24; };
 
-        recursion yes;
-        allow-recursion { 192.168.0/24; };
-        listen-on { 192.168.0.10; };
+        //forwarders { 192.168.0.1; };
 
 	//========================================================================
 	// If BIND logs error messages about the root key being expired,
