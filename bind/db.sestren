@@ -1,37 +1,32 @@
 $ORIGIN sestren.
 
 $TTL    604800
-@       IN      SOA     backup1.sestren admin.backup1.sestren (
-                              2         ; Serial
+@       IN      SOA     backup1 admin.backup1 (
+                              3         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-                IN      NS      router
-router	        IN      A       192.168.0.1
-
-                IN      NS      tower
-tower           IN      A       192.168.0.2
-
                 IN      NS      azel
-azel            IN      A       192.168.0.3
-
-                IN      NS      sproxy
-sproxy          IN      A       192.168.0.4
-
+                IN      NS      backup1
+                IN      NS      backup2
                 IN      NS      minecraft
+                IN      NS      pi1
+                IN      NS      pi2
+                IN      NS      router
+                IN      NS      sproxy
+                IN      NS      tower
+
+azel            IN      A       192.168.0.3
+backup1         IN      A       192.168.0.10
+backup2         IN      A       192.168.0.11
 minecraft       IN      A       192.168.0.6
+pi1             IN      A       192.168.0.12
+pi2             IN      A       192.168.0.13
+router          IN      A       192.168.0.1
+sproxy          IN      A       192.168.0.4
+tower           IN      A       192.168.0.2
 
 dhcp            CNAME   backup1
 ns              CNAME   backup1
-backup1         IN      A       192.168.0.10
-
-                IN      NS      backup2
-backup2         IN      A       192.168.0.11
-
-                IN      NS      pi1
-pi1             IN      A       192.168.0.12
-
-                IN      NS      pi2
-pi2             IN      A       192.168.0.13

@@ -1,0 +1,22 @@
+;$ORIGIN sestren.
+
+$TTL    604800
+@       IN      SOA     backup1 admin.backup1 (
+                              3         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+
+                IN      NS      backup1.sestren.
+
+3               IN      PTR     azel.sestren.
+10              IN      PTR     backup1.sestren.
+11              IN      PTR     backup2.sestren.
+6               IN      PTR     minecraft.sestren.
+12              IN      PTR     pi1.sestren.
+13              IN      PTR     pi2.sestren.
+1               IN      PTR     router.sestren.
+4               IN      PTR     sproxy.sestren.
+2               IN      PTR     tower.sestren.
