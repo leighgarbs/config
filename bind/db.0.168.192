@@ -1,5 +1,3 @@
-;$ORIGIN sestren.
-
 $TTL    604800
 @       IN      SOA     backup1 admin.backup1 (
                               3         ; Serial
