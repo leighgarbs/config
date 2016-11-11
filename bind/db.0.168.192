@@ -17,4 +17,5 @@ $TTL    604800
 13              IN      PTR     pi2.sestren.
 1               IN      PTR     router.sestren.
 4               IN      PTR     sproxy.sestren.
+5               IN      PTR     tor.sestren.
 2               IN      PTR     tower.sestren.
