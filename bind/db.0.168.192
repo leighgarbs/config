@@ -19,3 +19,4 @@ $TTL    604800
 4               IN      PTR     sproxy.sestren.
 5               IN      PTR     tor.sestren.
 2               IN      PTR     tower.sestren.
+14              IN      PTR     wap.sestren.
