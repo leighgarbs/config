@@ -1,23 +1,21 @@
 $TTL    604800
-@       IN      SOA     backup1 admin.backup1 (
-                              4         ; Serial
+@       IN      SOA     ns admin.ns (
+                              5         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
 
-                IN      NS      backup1.sestren.
+                IN      NS      ns.sestren.
 
 3               IN      PTR     azel.sestren.
-10              IN      PTR     backup1.sestren.
-11              IN      PTR     backup2.sestren.
-254             IN      PTR     vlanswitch.sestren.
 6               IN      PTR     minecraft.sestren.
-12              IN      PTR     pi1.sestren.
+10              IN      PTR     ns.sestren.
 13              IN      PTR     pi2.sestren.
 1               IN      PTR     router.sestren.
 4               IN      PTR     sproxy.sestren.
 5               IN      PTR     tor.sestren.
 2               IN      PTR     tower.sestren.
+254             IN      PTR     vlanswitch.sestren.
 14              IN      PTR     wap.sestren.
