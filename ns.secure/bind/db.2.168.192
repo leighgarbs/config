@@ -1,0 +1,14 @@
+$TTL    604800
+@       IN      SOA     ns admin.ns (
+                              6         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+
+                IN      NS      backup1.secure.
+
+10              IN      PTR     backup1.secure.
+11              IN      PTR     backup2.secure.
+1               IN      PTR     router.secure.

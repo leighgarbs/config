@@ -6,12 +6,12 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "dmz" {
+zone "secure" {
     type master;
-    file "/etc/bind/db.dmz";
+    file "/etc/bind/db.secure";
 };
 
 zone "0.168.192.in-addr.arpa" {
     type master;
-    file "/etc/bind/db.0.168.192";
+    file "/etc/bind/db.2.168.192";
 };
