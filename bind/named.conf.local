@@ -6,9 +6,9 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "sestren" {
+zone "dmz" {
     type master;
-    file "/etc/bind/db.sestren";
+    file "/etc/bind/db.dmz";
 };
 
 zone "0.168.192.in-addr.arpa" {

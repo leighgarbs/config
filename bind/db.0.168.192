@@ -7,15 +7,13 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
 
-                IN      NS      ns.sestren.
+                IN      NS      ns.dmz.
 
-3               IN      PTR     azel.sestren.
-6               IN      PTR     minecraft.sestren.
-10              IN      PTR     ns.sestren.
-13              IN      PTR     pi2.sestren.
-1               IN      PTR     router.sestren.
-4               IN      PTR     sproxy.sestren.
-5               IN      PTR     tor.sestren.
-2               IN      PTR     tower.sestren.
-254             IN      PTR     vlanswitch.sestren.
-14              IN      PTR     wap.sestren.
+3               IN      PTR     azel.dmz.
+10              IN      PTR     ns.dmz.
+13              IN      PTR     pi2.dmz.
+1               IN      PTR     router.dmz.
+4               IN      PTR     sproxy.dmz.
+2               IN      PTR     tower.dmz.
+254             IN      PTR     vlanswitch.dmz.
+14              IN      PTR     wap.dmz.
