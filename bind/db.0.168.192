@@ -1,6 +1,6 @@
 $TTL    604800
 @       IN      SOA     backup1 admin.backup1 (
-                              3         ; Serial
+                              4         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -12,6 +12,7 @@ $TTL    604800
 3               IN      PTR     azel.sestren.
 10              IN      PTR     backup1.sestren.
 11              IN      PTR     backup2.sestren.
+254             IN      PTR     vlanswitch.sestren.
 6               IN      PTR     minecraft.sestren.
 12              IN      PTR     pi1.sestren.
 13              IN      PTR     pi2.sestren.

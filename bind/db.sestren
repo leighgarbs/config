@@ -2,7 +2,7 @@ $ORIGIN sestren.
 
 $TTL    604800
 @       IN      SOA     backup1 admin.backup1 (
-                              3         ; Serial
+                              4         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -11,6 +11,7 @@ $TTL    604800
                 IN      NS      azel
                 IN      NS      backup1
                 IN      NS      backup2
+                IN      NS      vlanswitch
                 IN      NS      minecraft
                 IN      NS      pi1
                 IN      NS      pi2
@@ -23,6 +24,7 @@ $TTL    604800
 azel            IN      A       192.168.0.3
 backup1         IN      A       192.168.0.10
 backup2         IN      A       192.168.0.11
+vlanswitch      IN      A       192.168.0.254
 minecraft       IN      A       192.168.0.6
 pi1             IN      A       192.168.0.12
 pi2             IN      A       192.168.0.13
