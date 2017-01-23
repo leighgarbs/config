@@ -2,7 +2,7 @@ $ORIGIN dmz.
 
 $TTL    604800
 @       IN      SOA     ns admin.ns (
-                              5         ; Serial
+                              6         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -17,14 +17,14 @@ $TTL    604800
                 IN      NS      vlanswitch
                 IN      NS      wap
 
-azel            IN      A       192.168.0.3
-ns              IN      A       192.168.0.10
-pi2             IN      A       192.168.0.13
-router          IN      A       192.168.0.1
-sproxy          IN      A       192.168.0.4
-tor             IN      A       192.168.0.5
-tower           IN      A       192.168.0.2
-vlanswitch      IN      A       192.168.0.254
-wap             IN      A       192.168.0.14
+azel            IN      A       192.168.1.3
+ns              IN      A       192.168.1.10
+pi2             IN      A       192.168.1.13
+router          IN      A       192.168.1.1
+sproxy          IN      A       192.168.1.4
+tor             IN      A       192.168.1.5
+tower           IN      A       192.168.1.2
+vlanswitch      IN      A       192.168.1.254
+wap             IN      A       192.168.1.14
 
 dhcp            CNAME   ns
