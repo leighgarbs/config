@@ -11,7 +11,7 @@ zone "secure" {
     file "/etc/bind/db.secure";
 };
 
-zone "0.168.192.in-addr.arpa" {
+zone "2.168.192.in-addr.arpa" {
     type master;
     file "/etc/bind/db.2.168.192";
 };

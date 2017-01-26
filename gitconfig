@@ -2,7 +2,7 @@
 	email = craymen@gmail.com
 	name = Leigh Garbs
 [push]
-	default = simple
+	default = nothing
 [core]
 	editor = emacs
 [color]
