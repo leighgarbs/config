@@ -1,0 +1,32 @@
+$ORIGIN dmz.
+
+$TTL    604800
+@       IN      SOA     ns admin.ns (
+                              7         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+                IN      NS      azel
+                IN      NS      minecraft
+		IN      NS      ns
+                IN      NS      pi2
+                IN      NS      router
+                IN      NS      sproxy
+                IN      NS      tower
+                IN      NS      vlanswitch
+                IN      NS      wap
+
+azel            IN      A       192.168.1.3
+minecraft       IN      A       192.168.1.6
+ns              IN      A       192.168.1.10
+pi2             IN      A       192.168.1.13
+router          IN      A       192.168.1.1
+sproxy          IN      A       192.168.1.4
+tor             IN      A       192.168.1.5
+tower           IN      A       192.168.1.2
+vlanswitch      IN      A       192.168.1.254
+wap             IN      A       192.168.1.14
+
+dhcp            CNAME   ns
