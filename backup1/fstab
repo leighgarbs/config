@@ -2,5 +2,6 @@ proc            /proc           proc    defaults          0       0
 /dev/mmcblk0p1  /boot           vfat    defaults          0       2
 /dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
 UUID=3befa7c1-174c-4fb8-b8ce-6697383e16c4 /mnt/backup/ ext4 defaults 0 2
+UUID=59d819a5-492e-4916-b00d-50b882d94388 /mnt/sensitive/ ext4 defaults 0 2
 # a swapfile is not a swap partition, no line here
 #   use  dphys-swapfile swap[on|off]  for that
