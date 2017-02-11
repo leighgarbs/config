@@ -25,6 +25,7 @@ PATH=/bin:/usr/bin:/home/leigh/bin:/home/leigh/bin/linux
 
 TOWERHOME_CONF=/home/leigh/config/backup1/rsnapshot.tower_home.conf
 MINECRAFT_CONF=/home/leigh/config/backup1/rsnapshot.minecraft.conf
+SENSITIVE_CONF=/home/leigh/config/backup1/rsnapshot.sensitive.conf
 
 # TOWER_HOME ----------------------------------------------
 0  3  * * * run-backup -t daily -c $TOWERHOME_CONF --sync
@@ -35,3 +36,8 @@ MINECRAFT_CONF=/home/leigh/config/backup1/rsnapshot.minecraft.conf
 0  5  * * * run-backup -t daily -c $MINECRAFT_CONF --sync
 55 23 * * 0 run-backup -t weekly -c $MINECRAFT_CONF
 57 23 1 * * run-backup -t monthly -c $MINECRAFT_CONF
+
+# SENSITIVE -----------------------------------------------
+0  5  * * * run-backup -t daily -c $SENSITIVE_CONF --sync
+55 23 * * 0 run-backup -t weekly -c $SENSITIVE_CONF
+57 23 1 * * run-backup -t monthly -c $SENSITIVE_CONF
