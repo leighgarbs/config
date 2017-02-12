@@ -1,6 +1,6 @@
 $TTL    604800
 @       IN      SOA     ns admin.ns (
-                              9         ; Serial
+                             10         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -10,12 +10,12 @@ $TTL    604800
                 IN      NS      ns.dmz.
 
 3               IN      PTR     azel.dmz.
+2               IN      PTR     fs.dmz.
 6               IN      PTR     minecraft.dmz.
 10              IN      PTR     ns.dmz.
 1               IN      PTR     router.dmz.
 4               IN      PTR     sproxy1.dmz.
 13              IN      PTR     sproxy2.dmz.
 5               IN      PTR     tor.dmz.
-2               IN      PTR     tower.dmz.
 254             IN      PTR     vlanswitch.dmz.
 14              IN      PTR     wap.dmz.
