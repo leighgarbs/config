@@ -1,5 +1,6 @@
 g++
 gcc
+gcc-c++
 gdb
 make
 valgrind

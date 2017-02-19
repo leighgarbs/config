@@ -1,0 +1,11 @@
+[Unit]
+Description=Monolithic network sleep proxy
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/sproxy -D
+PIDFile=/var/run/sproxy.pid
+
+[Install]
+WantedBy=multi-user.target
