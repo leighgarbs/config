@@ -4,6 +4,7 @@
 ;; Set background and foreground (text) colors
 (set-background-color "black")
 (set-foreground-color "white")
+(set-cursor-color     "white")
 
 ;; Some common text settings
 (defun common-text-settings ()
