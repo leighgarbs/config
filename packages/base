@@ -2,6 +2,7 @@ bind9-host
 bind-utils
 dnsutils
 emacs
+expand
 expect
 git
 htop
