@@ -23,15 +23,21 @@
 
 PATH=/bin:/usr/bin:/home/leigh/bin:/home/leigh/bin/linux
 
-TOWERHOME_CONF=/home/leigh/config/backup1/rsnapshot.tower_home.conf
-MINECRAFT_CONF=/home/leigh/config/backup1/rsnapshot.minecraft.conf
+FSDMZ_CONF=/home/leigh/config/backup1/rsnapshot.fs.dmz.conf
+FSSECURE_CONF=/home/leigh/config/backup1/rsnapshot.fs.secure.conf
+MINECRAFTDMZ_CONF=/home/leigh/config/backup1/rsnapshot.minecraft.dmz.conf
 
 # TOWER_HOME ----------------------------------------------
-0  3  * * * run-backup -t daily -c $TOWERHOME_CONF --sync
-55 23 * * 0 run-backup -t weekly -c $TOWERHOME_CONF
-57 23 1 * * run-backup -t monthly -c $TOWERHOME_CONF
+0  3  * * * run-backup -t daily -c $FSDMZ_CONF --sync
+55 23 * * 0 run-backup -t weekly -c $FSDMZ_CONF
+57 23 1 * * run-backup -t monthly -c $FSDMZ_CONF
 
 # MINECRAFT -----------------------------------------------
-0  5  * * * run-backup -t daily -c $MINECRAFT_CONF --sync
-55 23 * * 0 run-backup -t weekly -c $MINECRAFT_CONF
-57 23 1 * * run-backup -t monthly -c $MINECRAFT_CONF
+0  5  * * * run-backup -t daily -c $MINECRAFTDMZ_CONF --sync
+55 23 * * 0 run-backup -t weekly -c $MINECRAFTDMZ_CONF
+57 23 1 * * run-backup -t monthly -c $MINECRAFTDMZ_CONF
+
+# SENSITIVE -----------------------------------------------
+0  5  * * * run-backup -t daily -c $FSSECURE_CONF --sync
+55 23 * * 0 run-backup -t weekly -c $FSSECURE_CONF
+57 23 1 * * run-backup -t monthly -c $FSSECURE_CONF
