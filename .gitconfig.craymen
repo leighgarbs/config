@@ -1,0 +1,4 @@
+[user]
+        email = craymen@gmail.com
+[include]
+        path = ~/config/gitconfig
