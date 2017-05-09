@@ -2,4 +2,3 @@
         name = Leigh Garbs
 [core]
         editor = emacs
-        autocrlf = input
