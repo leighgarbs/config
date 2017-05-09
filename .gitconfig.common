@@ -1,4 +1,5 @@
 [user]
-	name = Leigh Garbs
+        name = Leigh Garbs
 [core]
-	editor = emacs
+        editor = emacs
+        autocrlf = true
