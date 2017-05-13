@@ -2,3 +2,6 @@
         name = Leigh Garbs
 [core]
         editor = emacs
+[push]
+        default = simple
+        
