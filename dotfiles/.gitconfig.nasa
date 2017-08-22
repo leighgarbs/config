@@ -1,4 +1,4 @@
 [include]
-        path = ~/config/.gitconfig.common
+        path = ~/config/dotfiles/.gitconfig.common
 [user]
         email = leigh.s.garbs@nasa.gov
