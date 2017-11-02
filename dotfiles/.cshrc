@@ -1,3 +1,8 @@
 setenv VISUAL emacs
 setenv EDITOR "$VISUAL"
-setenv GPG_TTY $(tty)
+
+if ( $?SSH_TTY ) then
+    setenv GPG_TTY $SSH_TTY
+else
+    setenv GPG_TTY `tty`
+endif
