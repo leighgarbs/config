@@ -3,5 +3,3 @@
 [user]
         email = leighgarbs@gmail.com
         signingkey = 5933D6B227739B99
-[gpg]
-        program = gpg2
