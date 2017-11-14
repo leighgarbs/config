@@ -10,7 +10,7 @@ LOG_FILE=/var/log/netsuspend.log
 PID_FILE=/var/run/netsuspend.pid
 
 # Whether or not to daemonize by default (can be 'yes' or 'no')
-DAEMONIZE=no
+#DAEMONIZE=no
 
 # How long (in minutes) netsuspend should allow the computer to remain idle before
 # putting it to sleep
