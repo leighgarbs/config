@@ -1,0 +1,9 @@
+concurrent = 1
+check_interval = 1200
+
+[[runners]]
+  name = "shell"
+  url = "http://gitlab.dmz"
+  token = "73da3efee0457ec7eeedd2b2004fc5"
+  executor = "shell"
+  [runners.cache]
