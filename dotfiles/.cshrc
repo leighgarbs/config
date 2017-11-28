@@ -1,3 +1,5 @@
+alias ls ls --color
+
 setenv VISUAL emacs
 setenv EDITOR "$VISUAL"
 
