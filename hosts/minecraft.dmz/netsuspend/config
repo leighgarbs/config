@@ -6,6 +6,9 @@ ETH_INTERFACE=all
 # Location of the netsuspend log file
 LOG_FILE=/var/log/netsuspend.log
 
+# Location of the netsuspend PID file
+PID_FILE=/var/run/netsuspend.pid
+
 # Whether or not to daemonize by default (can be 'yes' or 'no')
 #DAEMONIZE=no
 
@@ -13,10 +16,9 @@ LOG_FILE=/var/log/netsuspend.log
 # putting it to sleep
 IDLE_TIMEOUT=5
 
-# The command that should be run when IDLE_TIMEOUT elapses.  This is intended to be
-# something that will put the system into a low-power state but could any command
-#TIMEOUT_CMD=pm-suspend
-TIMEOUT_CMD=pm-hibernate
+# The kernel sleep state to use.  Must match one of the strings reported by
+# /sys/power/state.
+SLEEP_STATE=disk
 
 # The length of time (in seconds) between checks business.
 BUSY_CHECK_PERIOD=10
