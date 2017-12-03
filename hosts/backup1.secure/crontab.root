@@ -23,9 +23,11 @@
 
 PATH=/bin:/usr/bin:/root/bin:/root/bin/linux
 
-FSDMZ_CONF=/root/config/backup1/rsnapshot.fs.dmz.conf
-FSSECURE_CONF=/root/config/backup1/rsnapshot.fs.secure.conf
-MINECRAFTDMZ_CONF=/root/config/backup1/rsnapshot.minecraft.dmz.conf
+RSNAPSHOT_CONFDIR=/root/config/hosts/backup1.secure
+
+FSDMZ_CONF=$RSNAPSHOT_CONFDIR/rsnapshot.fs.dmz.conf
+FSSECURE_CONF=$RSNAPSHOT_CONFDIR/rsnapshot.fs.secure.conf
+MINECRAFTDMZ_CONF=$RSNAPSHOT_CONFDIR/rsnapshot.minecraft.dmz.conf
 
 # Keep the backup drive mounted ------------------------------------------------
 0 * * * * mount /mnt/backup 2> /dev/null
