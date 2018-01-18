@@ -1,0 +1,12 @@
+iface lo inet loopback
+
+iface enp3s0 inet dhcp
+post-up ethtool -s enp3s0 wol g
+
+iface enp3s0:1 inet static
+address 192.168.2.5
+netmask 255.255.255.0
+gateway 192.168.2.1
+post-up ethtool -s enp3s0:1 wol g
+
+auto lo enp3s0 enp3s0:1
