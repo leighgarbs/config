@@ -37,7 +37,7 @@ CPU_CHECKING=enabled
 
 # CPU usage percentage, below which the CPU is considered idle.  Has no effect
 # if CPU_CHECKING is disabled.
-CPU_USAGE_THRESHOLD=5
+CPU_USAGE_THRESHOLD=10
 
 # If the disk is busy, should netsuspend consider the system in use?
 DISK_CHECKING=enabled
