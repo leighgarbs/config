@@ -2,7 +2,7 @@ $ORIGIN secure.
 
 $TTL    604800
 @       IN      SOA     backup1 admin.backup1 (
-                              9         ; Serial
+                             13         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -12,13 +12,17 @@ $TTL    604800
                 IN      NS      backup2
                 IN      NS      router
 		IN      NS      wap
+		IN      NS      fs
+		IN      NS      sproxy
 
 backup1         IN      A       192.168.2.2
 backup2         IN      A       192.168.2.3
 router          IN      A       192.168.2.1
 wap             IN      A       192.168.2.4
+fs              IN      A       192.168.2.5
+sproxy          IN      A       192.168.2.6
 
 dhcp            CNAME   backup1
 ns              CNAME   backup1
-fs              CNAME   backup1
 wapcon          CNAME   backup1
+gitlab          CNAME   fs
