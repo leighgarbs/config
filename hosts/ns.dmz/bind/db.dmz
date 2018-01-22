@@ -2,7 +2,7 @@ $ORIGIN dmz.
 
 $TTL    604800
 @       IN      SOA     ns admin.ns (
-                             12         ; Serial
+                             13         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -25,7 +25,6 @@ ninswitch       IN      A       192.168.1.7
 ns              IN      A       192.168.1.10
 router          IN      A       192.168.1.1
 sproxy          IN      A       192.168.1.4
-tor             IN      A       192.168.1.5
 vlanswitch      IN      A       192.168.1.254
 wap             IN      A       192.168.1.14
 
