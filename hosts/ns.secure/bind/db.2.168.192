@@ -1,6 +1,6 @@
 $TTL    604800
 @       IN      SOA     backup1 admin.backup1 (
-                              8         ; Serial
+                             11         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -13,3 +13,5 @@ $TTL    604800
 3               IN      PTR     backup2.secure.
 1               IN      PTR     router.secure.
 4               IN      PTR     wap.secure.
+5               IN      PTR     fs.secure.
+6               IN      PTR     sproxy.secure.

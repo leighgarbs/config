@@ -1,0 +1,11 @@
+[Unit]
+Description=Sleep proxy for IPv4 LANs
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/sproxy -D
+PIDFile=/var/run/sproxy.pid
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+/var/log/netsuspend.log {
+    su root root
+    weekly
+    nocreate
+    rotate 4
+    compress
+    prerotate
+      [ -f /var/run/netsuspend.pid ] && kill -USR1 `cat /var/run/netsuspend.pid`
+    endscript
+    postrotate
+      [ -f /var/run/netsuspend.pid ] && kill -USR2 `cat /var/run/netsuspend.pid`
+    endscript
+}
