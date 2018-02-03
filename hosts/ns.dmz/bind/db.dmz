@@ -2,7 +2,7 @@ $ORIGIN dmz.
 
 $TTL    604800
 @       IN      SOA     ns admin.ns (
-                             14         ; Serial
+                             15         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -13,6 +13,7 @@ $TTL    604800
                 IN      NS      minecraft
                 IN      NS      ninswitch
                 IN      NS      ns
+		IN      NS      ps4
                 IN      NS      router
                 IN      NS      sproxy
                 IN      NS      vlanswitch
@@ -23,6 +24,7 @@ fs              IN      A       192.168.1.2
 minecraft       IN      A       192.168.1.6
 ninswitch       IN      A       192.168.1.7
 ns              IN      A       192.168.1.10
+ps4             IN      A       192.168.1.11
 router          IN      A       192.168.1.1
 sproxy          IN      A       192.168.1.4
 vlanswitch      IN      A       192.168.1.254
