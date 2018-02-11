@@ -1,0 +1,7 @@
+dosfstools
+e2fsprogs
+gparted
+parted
+util-linux
+wireshark-cli
+wireshark-qt

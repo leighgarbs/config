@@ -8,6 +8,7 @@ git
 htop
 nano
 nmap
+nmap-ncat
 parted
 rsync
 samba-client
