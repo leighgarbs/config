@@ -1,0 +1,62 @@
+# CSS-related environment variables
+# MSSUSER is set in .cshrc
+setenv MSSHOST   "css.larc.nasa.gov"
+setenv MSSDOMAIN ".ndc.nasa.gov"
+
+# Add shortcuts to different repositories on the dunkel SVN server
+setenv EARLSVN    "svn://dantzig/EARL"
+setenv DUNKELSVN  "http://dunkel.larc.nasa.gov/svn"
+setenv GTMSVN     "$DUNKELSVN/GTM"
+setenv ASROVSVN   "$DUNKELSVN/ASROV"
+setenv BVRSVN     "$DUNKELSVN/BVR"
+setenv FSSBSVN    "https://ed-svn.ndc.nasa.gov/svn/FSSB-SWEngineering"
+
+# Add Gitlab shortcut environment variables
+setenv GITLAB $HOME/gitlab
+setenv AEONCOMMON  $GITLAB/aeoncommon
+setenv AEONUTIL    $GITLAB/aeonutil
+setenv AEONDDS     $GITLAB/aeondds
+setenv AEONVEHICLE $GITLAB/aeonvehicle
+
+# Set the SMTP server to use for various things
+setenv SMTP_RELAY smtp.larc.nasa.gov
+
+# Set the address kickoff emails to
+setenv KICKOFF_DEST leigh.s.garbs@nasa.gov
+
+# Where are the vobs?
+setenv BASEPATH /vobs
+
+# What is the IP address of my VM?
+setenv VMIP 172.16.88.129
+
+if ( `echo $PATH | grep -c ~/bin/linux` == 0 ) then
+  setenv PATH ~/bin/linux:${PATH}
+endif
+
+if ( `echo $PATH | grep -c ~/bin/work` == 0 ) then
+  setenv PATH ~/bin/work:${PATH}
+endif
+
+if ( `echo $PATH | grep -c ~/subversion` == 0 ) then
+  setenv PATH ~/subversion/subversion-1.9.4/out/bin:${PATH}
+endif
+
+#if ( `echo $PATH | grep -c ~/git` == 0 ) then
+#  setenv PATH ~/git/git-2.9.5:${PATH}
+#endif
+
+#if ( `echo $PATH | grep -c ~/libgpg-error` == 0 ) then
+#  setenv PATH ~/libgpg-error/libgpg-error-1.27/out/bin:${PATH}
+#endif
+
+if ( `echo $LD_LIBRARY_PATH | grep -c ~/serf` == 0 ) then
+   setenv LD_LIBRARY_PATH "$LD_LIBRARY_PATH":/net/jedi.ndc.nasa.gov/home/lgarbs/lib/serf/trunk/out/lib
+endif
+
+#if ( `echo $LD_LIBRARY_PATH | grep -c ~/libgpg-error` == 0 ) then
+#   setenv LD_LIBRARY_PATH "$LD_LIBRARY_PATH":/net/jedi.ndc.nasa.gov/home/lgarb#s/lib/libgpg-error/libgpg-error-1.27/out/lib
+#endif
+
+# Put my own personal settings in place
+source ~/config/dotfiles/.cshrc
