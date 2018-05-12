@@ -1,0 +1,21 @@
+;; Inhibit the startup screen
+(setq inhibit-startup-screen t)
+
+;; Set background and foreground (text) colors
+(set-background-color "black")
+(set-foreground-color "white")
+(set-cursor-color     "white")
+
+;; Set fill parameters for text
+(add-hook 'text-mode-hook 'common-text-settings)
+
+;; highlight characters that go past whitespace-line-column
+(require 'whitespace)
+(setq whitespace-style '(face empty tabs lines-tail trailing))
+(global-whitespace-mode t)
+
+;; insert spaces in place of tabs
+(setq-default indent-tabs-mode nil)
+
+;; autowrap lines in all text buffers
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
