@@ -18,6 +18,8 @@ setenv AEONUTIL    $GITLAB/aeonutil
 setenv AEONDDS     $GITLAB/aeondds
 setenv AEONVEHICLE $GITLAB/aeonvehicle
 
+setenv CMAKE_ROOT ~/cmake/cmake-3.11.1-Linux-x86_64
+
 # Set the SMTP server to use for various things
 setenv SMTP_RELAY smtp.larc.nasa.gov
 
@@ -40,6 +42,10 @@ endif
 
 if ( `echo $PATH | grep -c ~/subversion` == 0 ) then
   setenv PATH ~/subversion/subversion-1.9.4/out/bin:${PATH}
+endif
+
+if ( `echo $PATH | grep -c ~/cmake` == 0 ) then
+  setenv PATH ~/cmake/cmake-3.11.1-Linux-x86_64/bin:${PATH}
 endif
 
 #if ( `echo $PATH | grep -c ~/git` == 0 ) then
