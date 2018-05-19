@@ -1,5 +1,7 @@
 22    ssh
-80    http
 139   Windows networking
 445   Windows networking
+774
+2049
+8081  jenkins
 32400 Plex
