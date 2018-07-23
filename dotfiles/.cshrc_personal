@@ -23,8 +23,8 @@ setenv CMAKE_ROOT ~/cmake/cmake-3.11.1-Linux-x86_64
 # Set the SMTP server to use for various things
 setenv SMTP_RELAY smtp.larc.nasa.gov
 
-# Set the address kickoff emails to
-setenv KICKOFF_DEST leigh.s.garbs@nasa.gov
+# Set my email address
+setenv EMAIL leigh.s.garbs@nasa.gov
 
 # Where are the vobs?
 setenv BASEPATH /vobs
