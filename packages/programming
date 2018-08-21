@@ -1,5 +1,6 @@
 clang
 clang-analyzer
+clang-tools
 cmake
 cppcheck
 g++
