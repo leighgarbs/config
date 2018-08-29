@@ -48,9 +48,9 @@ if ( `echo $PATH | grep -c ~/cmake` == 0 ) then
   setenv PATH ~/cmake/cmake-3.11.1-Linux-x86_64/bin:${PATH}
 endif
 
-#if ( `echo $PATH | grep -c ~/git` == 0 ) then
-#  setenv PATH ~/git/git-2.9.5:${PATH}
-#endif
+if ( `echo $PATH | grep -c ~/git` == 0 ) then
+  setenv PATH ~/git/git-2.9.5:${PATH}
+endif
 
 #if ( `echo $PATH | grep -c ~/libgpg-error` == 0 ) then
 #  setenv PATH ~/libgpg-error/libgpg-error-1.27/out/bin:${PATH}
