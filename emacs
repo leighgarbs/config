@@ -31,3 +31,7 @@
 
 ;; autowrap lines in all text buffers
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
+
+;; cmake-mode
+(setq load-path (cons (expand-file-name "/Users/leigh/config") load-path))
+(require 'cmake-mode)
