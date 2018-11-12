@@ -33,5 +33,29 @@
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; cmake-mode
-(setq load-path (cons (expand-file-name "/Users/leigh/config") load-path))
+(setq load-path (cons (expand-file-name "~/config") load-path))
 (require 'cmake-mode)
+
+;; Adds the melpa-stable package repository as a package source
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
+
+;; This was added automatically when I installed groovy-mode, not sure why it's
+;; here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (groovy-mode))))
+
+;; This was added automatically when I installed groovy-mode, not sure why it's
+;; here
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

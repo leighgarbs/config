@@ -21,5 +21,11 @@
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; cmake-mode
-(setq load-path (cons (expand-file-name "/Users/leigh/config") load-path))
+(setq load-path (cons (expand-file-name "~/config") load-path))
 (require 'cmake-mode)
+
+;; Adds the melpa-stable package repository as a package source
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
