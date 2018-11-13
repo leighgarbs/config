@@ -48,6 +48,10 @@ if ( `echo $PATH | grep -c ~/cmake` == 0 ) then
   setenv PATH ~/cmake/cmake-3.11.1-Linux-x86_64/bin:${PATH}
 endif
 
+if ( `echo $PATH | grep -c ~/emacs/bin` == 0 ) then
+  setenv PATH ~/emacs/bin:${PATH}
+endif
+
 if ( `echo $PATH | grep -c ~/git` == 0 ) then
   setenv PATH ~/git/git-2.9.5:${PATH}
 endif
@@ -65,4 +69,4 @@ endif
 #endif
 
 # Put my own personal settings in place
-source ~/config/dotfiles/.cshrc
+source ~/config/cshrc

@@ -1,5 +1,5 @@
 [include]
-        path = ~/config/dotfiles/.gitconfig.common
+        path = ~/config/gitconfig.common
 [user]
         email = leighgarbs@gmail.com
         signingkey = 2A9578E2
