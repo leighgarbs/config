@@ -2,4 +2,3 @@
         path = ~/config/gitconfig.common
 [user]
         email = leigh.s.garbs@nasa.gov
-        signingkey = 25E82692
