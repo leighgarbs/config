@@ -1,6 +1,9 @@
 ;; Inhibit the startup screen
 (setq inhibit-startup-screen t)
 
+;; Assume buffers contain text by default
+(setq-default major-mode 'text-mode)
+
 ;; Set background and foreground (text) colors
 (set-background-color "black")
 (set-foreground-color "white")
@@ -28,9 +31,6 @@
 
 ;; insert spaces in place of tabs
 (setq-default indent-tabs-mode nil)
-
-;; autowrap lines in all text buffers
-(add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; Adds the melpa-stable package repository as a package source
 (require 'package)
