@@ -25,6 +25,7 @@
 (add-hook 'text-mode-hook 'common-text-settings)
 (add-hook 'c-mode-common-hook 'common-text-settings)
 (add-hook 'groovy-mode-hook 'common-text-settings)
+(add-hook 'yaml-mode-hook 'common-text-settings)
 
 ;; linux style C intenting
 (setq c-default-style "linux" c-basic-offset 4)
