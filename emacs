@@ -9,17 +9,22 @@
 (set-foreground-color "white")
 (set-cursor-color     "white")
 
+;; Adds the melpa-stable package repository as a package source
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
+
 ;; Some common text settings
 (defun common-text-settings ()
   (auto-fill-mode 1)
   (set-fill-column 80)
   (setq require-final-newline t))
 
-;; Set fill parameters for text
+;; Text settings for commonly-used major modes
 (add-hook 'text-mode-hook 'common-text-settings)
-
-;; Set fill parameters for C and C++
 (add-hook 'c-mode-common-hook 'common-text-settings)
+(add-hook 'groovy-mode-hook 'common-text-settings)
 
 ;; linux style C intenting
 (setq c-default-style "linux" c-basic-offset 4)
@@ -31,12 +36,6 @@
 
 ;; insert spaces in place of tabs
 (setq-default indent-tabs-mode nil)
-
-;; Adds the melpa-stable package repository as a package source
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(package-initialize)
 
 ;; This was added automatically when I installed groovy-mode, not sure why it's
 ;; here
