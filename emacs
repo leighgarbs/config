@@ -19,7 +19,7 @@
 (defun common-text-settings ()
   (auto-fill-mode 1)
   (set-fill-column 80)
-  (setq require-final-newline t))
+  (setq require-final-newline 1))
 
 ;; Text settings for commonly-used major modes
 (add-hook 'text-mode-hook 'common-text-settings)
