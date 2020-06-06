@@ -18,8 +18,14 @@
 ;; Some common text settings
 (defun common-text-settings ()
   (auto-fill-mode 1)
-  (set-fill-column 80)
+  (set-fill-column 95)
   (setq require-final-newline 1))
+
+;; highlight characters that go past whitespace-line-column
+(require 'whitespace)
+(setq whitespace-style '(face empty tabs lines-tail trailing))
+(setq whitespace-line-column 95)
+(global-whitespace-mode t)
 
 ;; Text settings for commonly-used major modes
 (add-hook 'text-mode-hook 'common-text-settings)
@@ -29,11 +35,6 @@
 
 ;; linux style C intenting
 (setq c-default-style "linux" c-basic-offset 4)
-
-;; highlight characters that go past whitespace-line-column
-(require 'whitespace)
-(setq whitespace-style '(face empty tabs lines-tail trailing))
-(global-whitespace-mode t)
 
 ;; insert spaces in place of tabs
 (setq-default indent-tabs-mode nil)
