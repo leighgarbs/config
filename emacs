@@ -23,7 +23,7 @@
 
 (require 'whitespace)
 (setq whitespace-style '(face empty tabs lines-tail trailing))
-(setq whitespace-line-column 110)
+(setq whitespace-line-column 95)
 (global-whitespace-mode t)
 
 ;; Insert spaces in place of tabs
@@ -31,7 +31,7 @@
 
 (defun common-text-settings ()
   (auto-fill-mode 1)
-  (set-fill-column 110)
+  (set-fill-column 95)
   (setq require-final-newline 'ask)
   (turn-on-auto-fill))
 
