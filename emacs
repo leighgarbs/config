@@ -36,10 +36,13 @@
   (turn-on-auto-fill))
 
 (add-hook 'c-mode-common-hook 'common-text-settings)
+(add-hook 'cmake-mode-hook 'common-text-settings)
 (add-hook 'groovy-mode-hook 'common-text-settings)
 (add-hook 'python-mode-hook 'common-text-settings)
 (add-hook 'text-mode-hook 'common-text-settings)
 (add-hook 'yaml-mode-hook 'common-text-settings)
+
+(setq auto-mode-alist (append '(("\\CMakeLists.txt\\'" . cmake-mode)) auto-mode-alist))
 
 ;; Linux style C intenting
 (setq c-default-style "linux" c-basic-offset 4)
