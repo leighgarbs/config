@@ -29,18 +29,21 @@
 ;; Insert spaces in place of tabs
 (setq-default indent-tabs-mode nil)
 
-(defun common-text-settings ()
-  (auto-fill-mode 1)
-  (set-fill-column 95)
-  (setq require-final-newline 'ask)
-  (turn-on-auto-fill))
+(defun common-text-settings (hook fill-column)
+  (add-hook hook
+            `(lambda ()
+               (auto-fill-mode t)
+               (set-fill-column ,fill-column)
+               (setq require-final-newline 'ask)
+               (turn-on-auto-fill))))
 
-(add-hook 'c-mode-common-hook 'common-text-settings)
-(add-hook 'cmake-mode-hook 'common-text-settings)
-(add-hook 'groovy-mode-hook 'common-text-settings)
-(add-hook 'python-mode-hook 'common-text-settings)
-(add-hook 'text-mode-hook 'common-text-settings)
-(add-hook 'yaml-mode-hook 'common-text-settings)
+(common-text-settings 'c-mode-common-hook 'whitespace-line-column)
+(common-text-settings 'cmake-mode-hook 'whitespace-line-column)
+(common-text-settings 'git-commit-mode-hook 72)
+(common-text-settings 'groovy-mode-hook 'whitespace-line-column)
+(common-text-settings 'python-mode-hook 'whitespace-line-column)
+(common-text-settings 'text-mode-hook 'whitespace-line-column)
+(common-text-settings 'yaml-mode-hook 'whitespace-line-column)
 
 (setq auto-mode-alist (append '(("\\CMakeLists.txt\\'" . cmake-mode)) auto-mode-alist))
 
@@ -49,3 +52,6 @@
 
 ;; Makes it so site-specific stuff can be used from .emacs.d/lisp
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
+
+;; Is there a better way to do this?
+(load-file "~/.emacs.d/elpa/git-commit-2.90.1/git-commit.el")
