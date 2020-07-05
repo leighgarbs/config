@@ -3,7 +3,7 @@
         email = leighgarbs@gmail.com
         signingkey = 2A9578E2
 [core]
-        editor = emacs
+        editor = emacs -nw
 [push]
         default = simple
 [commit]
