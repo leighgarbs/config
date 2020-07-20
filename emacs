@@ -42,6 +42,7 @@
 (common-text-settings 'git-commit-mode-hook 72)
 (common-text-settings 'groovy-mode-hook 'whitespace-line-column)
 (common-text-settings 'python-mode-hook 'whitespace-line-column)
+(common-text-settings 'sh-mode-hook 'whitespace-line-column)
 (common-text-settings 'text-mode-hook 'whitespace-line-column)
 (common-text-settings 'yaml-mode-hook 'whitespace-line-column)
 
