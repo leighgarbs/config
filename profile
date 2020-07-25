@@ -1,3 +1,5 @@
-#!/bin/bash
+#!/bin/bash -e
 
-export PATH="$HOME/.cargo/bin:$PATH"
+source ~/bin/addpath
+
+addpath PATH "${HOME}/.cargo/bin"
