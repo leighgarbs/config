@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/zsh -e
 
 # Source global definitions
 if [ -f /etc/zshrc ]; then

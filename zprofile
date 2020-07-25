@@ -1,14 +1,15 @@
-#!/bin/zsh
+#!/bin/zsh -e
 
 source "${HOME}/.zshrc"
 
-PATH="${HOME}/.cargo/bin:${PATH}"
-PATH="${HOME}/bin/macos:${PATH}"
-PATH="${HOME}/bin:${PATH}"
-PATH="/Applications/MATLAB_R2019a.app/bin:${PATH}"
-PATH="/Library/Python/2.7/bin:${PATH}"
+# Gets us the addpath function
+source ~/bin/addpath
 
-export PATH
+addpath PATH "${HOME}/.cargo/bin"
+addpath PATH "${HOME}/bin"
+addpath PATH "${HOME}/bin/macos"
+addpath PATH "/Applications/MATLAB_R2019a.app/bin"
+addpath PATH "/Library/Python/2.7/bin"
 
 # virtualenvwrapper
 export WORKON_HOME="${HOME}/.virtualenvs"
