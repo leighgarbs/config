@@ -7,11 +7,11 @@ source ~/bin/addpath
 
 addpath PATH "${HOME}/.cargo/bin"
 addpath PATH "${HOME}/bin"
-addpath PATH "${HOME}/bin/macos"
-addpath PATH "/Applications/MATLAB_R2019a.app/bin"
-addpath PATH "/Library/Python/2.7/bin"
+export PATH
 
-# virtualenvwrapper
-export WORKON_HOME="${HOME}/.virtualenvs"
-export PROJECT_HOME="${HOME}"
-source /usr/local/bin/virtualenvwrapper.sh
+# Provide a place to hang additional zsh setup configurable on each machine
+if [ -d ~/.zprofile.d ]; then
+    for FILE in $(find ~/.zprofile.d -depth 1 -type f -or -type l); do
+        . "${FILE}"
+    done
+fi

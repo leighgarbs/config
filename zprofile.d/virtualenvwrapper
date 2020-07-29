@@ -1,0 +1,5 @@
+#!/bin/zsh -e
+
+export WORKON_HOME="${HOME}/.virtualenvs"
+export PROJECT_HOME="${HOME}"
+. /usr/local/bin/virtualenvwrapper.sh

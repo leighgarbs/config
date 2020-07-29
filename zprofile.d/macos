@@ -1,0 +1,5 @@
+#!/bin/zsh -e
+
+addpath PATH "${HOME}/bin/macos"
+addpath PATH "/Applications/MATLAB_R2019a.app/bin"
+addpath PATH "/Library/Python/2.7/bin"
