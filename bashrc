@@ -5,6 +5,6 @@ if [ -f /etc/bashrc ]; then
    . /etc/bashrc
 fi
 
-export VISUAL=emacs
-export EDITOR="${VISUAL}"
-export GPG_TTY=$(tty)
+if [ -f ~/.bash_profile ]; then
+   . ~/.bash_profile
+fi
