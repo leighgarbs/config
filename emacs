@@ -23,7 +23,7 @@
 
 (require 'whitespace)
 (setq whitespace-style '(face empty tabs lines-tail trailing))
-(setq whitespace-line-column 95)
+(setq whitespace-line-column 110)
 (global-whitespace-mode t)
 
 ;; Insert spaces in place of tabs
