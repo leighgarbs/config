@@ -1,0 +1,6 @@
+[include]
+        path = config/gitconfig
+[user]
+        signingkey = 2A9578E2
+[commit]
+        gpgSign = true

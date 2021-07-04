@@ -11,8 +11,10 @@
 
 ;; Add packages
 (require 'package)
-
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 ;; GNU Emacs Lisp Package Archive
 ;; For important compatibility libraries like cl-lib
@@ -23,7 +25,7 @@
 
 (require 'whitespace)
 (setq whitespace-style '(face empty tabs lines-tail trailing))
-(setq whitespace-line-column 95)
+(setq whitespace-line-column 110)
 (global-whitespace-mode t)
 
 ;; Insert spaces in place of tabs
@@ -55,4 +57,4 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 
 ;; Is there a better way to do this?
-(load-file "~/.emacs.d/elpa/git-commit-2.90.1/git-commit.el")
+(load-file "~/.emacs.d/elpa/git-commit/git-commit.el")
