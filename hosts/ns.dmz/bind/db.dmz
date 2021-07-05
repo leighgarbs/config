@@ -2,7 +2,7 @@ $ORIGIN dmz.
 
 $TTL    604800
 @       IN      SOA     ns admin.ns (
-                             17         ; Serial
+                             18         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -18,6 +18,7 @@ $TTL    604800
                 IN      NS      sproxy
                 IN      NS      vlanswitch
                 IN      NS      wap
+                IN      NS      wapbridge
 
 desktop         IN      A       192.168.1.3
 fs              IN      A       192.168.1.2
@@ -29,6 +30,7 @@ router          IN      A       192.168.1.1
 sproxy          IN      A       192.168.1.4
 vlanswitch      IN      A       192.168.1.254
 wap             IN      A       192.168.1.14
+wapbridge       IN      A       192.168.1.15
 
 dhcp            CNAME   ns
 gitlab          CNAME   fs
