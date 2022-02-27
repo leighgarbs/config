@@ -58,3 +58,13 @@
 
 ;; Is there a better way to do this?
 (load-file "~/.emacs.d/elpa/git-commit/git-commit.el")
+
+(defun update-diff-colors ()
+  "update the colors for diff faces"
+  (set-face-attribute 'diff-added nil :foreground "white" :background "darkgreen")
+  (set-face-attribute 'diff-header nil :foreground "lightblue" :background "black")
+  (set-face-attribute 'diff-hunk-header nil :foreground "lightblue" :background "black")
+  (set-face-attribute 'diff-file-header nil :foreground "lightblue" :background "black")
+  (set-face-attribute 'diff-removed nil :foreground "white" :background "darkred"))
+
+(eval-after-load "diff-mode" '(update-diff-colors))
