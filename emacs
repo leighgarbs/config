@@ -56,6 +56,9 @@
 ;; Makes it so site-specific stuff can be used from .emacs.d/lisp
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 
+;; Don't create backup files
+(setq make-backup-files nil)
+
 ;; Is there a better way to do this?
 (load-file "~/.emacs.d/elpa/git-commit/git-commit.el")
 
