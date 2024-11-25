@@ -1,9 +1,6 @@
 #!/bin/bash -e
 
-# Gets us the addpath function
-source ~/bin/addpath
-
-addpath PATH "${HOME}/bin"
+PATH="${PATH}:${HOME}/bin"
 
 alias emacs="emacs -nw"
 
