@@ -53,9 +53,6 @@
 ;; Linux style C intenting
 (setq c-default-style "linux" c-basic-offset 4)
 
-;; Makes it so site-specific stuff can be used from .emacs.d/lisp
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
-
 ;; Don't create backup files
 (setq make-backup-files nil)
 
