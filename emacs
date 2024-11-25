@@ -56,9 +56,6 @@
 ;; Don't create backup files
 (setq make-backup-files nil)
 
-;; Is there a better way to do this?
-(load-file "~/.emacs.d/elpa/git-commit/git-commit.el")
-
 (defun update-diff-colors ()
   "update the colors for diff faces"
   (set-face-attribute 'diff-added nil :foreground "white" :background "darkgreen")
